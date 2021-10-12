@@ -1,1 +1,11 @@
-<p>contact works!</p>
+<form [formGroup]="data" (ngSubmit)="formSubmit()">
+    <input class="mt-4 ml-3 m-2" type="text" placeholder="First Name" formControlName="firstName"> 
+    <br>
+    <input class="ml-3 m-2" type="text" placeholder="Last name" formControlName = "lastName"> 
+    <br>
+    <input class="ml-3 m-2" type="text" placeholder="E-Mail" formControlName = "email"> 
+    <br>
+    <input class="ml-3 m-2" style="width:400px; height: 200px" placeholder="Your Message" type="text" formControlName ="msg"> 
+    <br>
+    <input class="ml-3 m-2 bg-primary" type="submit" value="Submit Data">
+</form>
