@@ -1,0 +1,12 @@
+<div *ngFor="let car of cars" class="m-4 row">
+    <div class="card col" style="width: 18rem;">
+        <img src="{{car.img}}" class="card-img-top" alt="Car">
+        <div class="card-body">
+          <h5 class="card-title">{{car.brand}} {{car.model}}</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur corrupti eaque qui illum dolore itaque saepe laboriosam, ipsam doloremque esse error assumenda voluptatibus, recusandae culpa suscipit in molestiae aliquam eum.</p> <hr>
+          <p class="priceStyle">{{car.price}}€</p>
+          <a href="#" class="btn btn-primary">Buy me!</a>
+        </div>
+    </div>
+</div>
+
