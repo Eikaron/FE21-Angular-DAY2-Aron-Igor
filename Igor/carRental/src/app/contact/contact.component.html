@@ -1,0 +1,25 @@
+<h2 class="text-center">Contact us</h2>
+
+<form [formGroup]='contInfo' (ngSubmit)='outPut()'>
+    <label>First name:</label><br>
+    <input type="text" formControlName='fName'><br><br>
+
+    <label>Last name:</label><br>
+    <input type="text" formControlName='lName'><br><br>
+
+    <label>Email:</label><br>
+    <input type="text" formControlName='email'><br><br>
+
+    <label>Your message:</label><br>
+    <textarea name="txt" cols="60" rows="6" formControlName='message'></textarea><br>
+
+    <input type="submit" class="btn btn-secondary" value="Submit">
+
+</form>
+
+<div class="mt-2">
+    <div *ngFor='let x of fData'>
+        <p>{{x.fName}} {{x.lName}}</p>
+    </div>
+
+</div>
