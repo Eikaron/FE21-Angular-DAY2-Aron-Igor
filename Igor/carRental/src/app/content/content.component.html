@@ -1,0 +1,13 @@
+<h2 class="text-center">Welcome to the Car Rental!</h2>
+<!-- <div *ngFor='let x of cars'>
+    <p class="text-primary fs-5">{{x.name}}</p>
+    <img src="{{x.img}}" alt="image">
+    <br><br>
+</div> -->
+<div *ngFor='let x of cars' class="card" style="width: 36rem;">
+    <img src="{{x.img}}" class="card-img-top" alt="image">
+    <div class="card-body">
+        <h5 class="card-title text-primary">{{x.name}}</h5>
+        <p class="card-text">Audi AG is a German automotive manufacturer of vehicles headquartered in Ingolstadt, Bavaria, Germany. As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in nine production facilities worldwide.</p>
+    </div>
+</div>
